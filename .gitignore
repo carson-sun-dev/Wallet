@@ -1,0 +1,5 @@
+﻿node_modules/
+dist/
+.env
+wallet-server/node_modules/
+Wallet/node_modules/
