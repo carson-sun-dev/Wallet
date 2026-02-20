@@ -1,0 +1,100 @@
+@import 'tailwindcss';
+
+:root {
+  --app-bg: #d1d5db;
+  --app-card-bg: #f3f4f6;
+  --app-text: #1f2937;
+  --app-text-secondary: #4b5563;
+  --app-border: #d1d5db;
+  --app-input-bg: #ffffff;
+  --app-primary: #1a3a63;
+  --app-primary-light: #2a5298;
+  --footer-bg: #f3f4f6;
+  --footer-text: #6b7280;
+  --footer-active: #1a3a63;
+}
+
+html.dark {
+  color-scheme: dark;
+  --app-bg: #0d1117;
+  --app-card-bg: #161b22;
+  --app-text: #e6edf3;
+  --app-text-secondary: #8b949e;
+  --app-border: #30363d;
+  --app-input-bg: #21262d;
+  --app-primary: #58a6ff;
+  --app-primary-light: #79b8ff;
+  --footer-bg: #161b22;
+  --footer-text: #8b949e;
+  --footer-active: #58a6ff;
+}
+
+html, body, #app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--app-bg);
+  color: var(--app-text);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* 通知/消息固定为浮动层，不参与文档流，不顶起页面 */
+.el-notification,
+.el-message {
+  position: fixed !important;
+  z-index: 9999;
+}
+
+html.dark .el-card {
+  --el-card-bg-color: var(--app-card-bg);
+  border-color: var(--app-border);
+}
+
+html.dark .el-input__wrapper {
+  background-color: var(--app-input-bg) !important;
+  box-shadow: 0 0 0 1px var(--app-border) inset !important;
+}
+
+html.dark .el-input__wrapper:hover,
+html.dark .el-input__wrapper.is-focus {
+  box-shadow: 0 0 0 1px var(--app-primary) inset !important;
+}
+
+html.dark .el-textarea__inner {
+  background-color: var(--app-input-bg) !important;
+  border-color: var(--app-border);
+  color: var(--app-text);
+}
+
+html.dark .el-table {
+  --el-table-bg-color: var(--app-card-bg) !important;
+  --el-table-tr-bg-color: var(--app-card-bg) !important;
+  --el-table-header-bg-color: var(--app-input-bg) !important;
+}
+
+html.dark .el-dialog {
+  --el-dialog-bg-color: var(--app-card-bg) !important;
+}
+
+html.dark .el-select .el-select__wrapper,
+html.dark .el-input-number .el-input__wrapper {
+  background-color: var(--app-input-bg) !important;
+  box-shadow: 0 0 0 1px var(--app-border) inset !important;
+}
+
+html.dark .el-date-editor .el-input__wrapper {
+  background-color: var(--app-input-bg) !important;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
