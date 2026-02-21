@@ -1,13 +1,11 @@
-# Wallet
+# Finance Tracker
 
-A full-stack wallet management app with Vue 3, Element Plus, Tailwind, Express, and MySQL.
+A full-stack wallet management app with Vue 3, node.js, and MySQL.
 
 ## Features
 
 - **User system**: Register, login, JWT auth, token refresh
-- **Transactions**: Quick 2x2 accounting, categories, accounts
-- **Accounts**: Cash, bank card, Alipay, WeChat
-- **Budget & alerts**: Monthly budget, spend alerts
+- **Transactions**: Quick accounting, categories, accounts
 - **Charts**: Expense trend, monthly comparison, category pie
 - **Theme**: Dark mode, custom primary color
 - **Import/Export**: CSV and Excel support
